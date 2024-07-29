@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Process Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="step">
+                <div class="bullet">1</div>
+                <p>Start</p>
+            </div>
+            <div class="step">
+                <div class="bullet">2</div>
+                <p>Step 2</p>
+            </div>
+            <div class="step">
+                <div class="bullet">3</div>
+                <p>Step 3</p>
+            </div>
+            <div class="step">
+                <div class="bullet">4</div>
+                <p>Step 4</p>
+            </div>
+            <div class="step">
+                <div class="bullet">5</div>
+                <p>Step 5</p>
+            </div>
+            <div class="step">
+                <div class="bullet">6</div>
+                <p>Finish</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prevBtn" onclick="moveStep(-1)">Previous</button>
+            <button id="nextBtn" onclick="moveStep(1)">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

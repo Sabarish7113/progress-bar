@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 30px;
+    position: relative;
+    top: 200px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    flex: 1;
+}
+
+.bullet {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 30px;
+    background-color: white;
+    color: #ddd;
+}
+
+.step p {
+    margin-top: 10px;
+}
+
+.step .check {
+    display: none;
+    color: green;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.step.active .bullet {
+    border-color: #4caf50;
+    background-color: #4caf50;
+    color: white;
+}
+
+.step.active .check {
+    display: inline;
+}
+
+.buttons {
+    margin-left: 30px;
+    justify-content: space-between;
+}
